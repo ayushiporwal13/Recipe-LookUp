@@ -1,0 +1,13 @@
+.card {
+    padding: 2% 0.5%;
+    width: 25%;
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    margin: 1% auto;
+    backdrop-filter: blur(2px);
+    background-color: hsla(0,0%,100%,.1);
+  }
+
+h4{
+    text-transform: capitalize
+}

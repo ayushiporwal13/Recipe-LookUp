@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  color: white;
+}
+
+body{
+  background-image: url(yellow_bg.jpg);
+  background-size: stretch;
+}
+
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.whole-page{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.app-sider{
+  width: 19%;
+  backdrop-filter: blur(2px);
+  background-color: hsla(0,0%,100%,.1);
+  border-radius: 30px;
+  margin-right: 1%;
+}
+
+.app-main{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.app-row{
+  display: flex;  
+}
+
+
+

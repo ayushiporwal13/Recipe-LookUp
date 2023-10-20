@@ -1,0 +1,103 @@
+.heading {
+    /* width: 100%; */
+    font-weight: bold;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.heading li,
+.list-data li {
+    list-style-type: none;
+    width: 25%;
+}
+
+.heading li:first-child,
+.list-data li:first-child {
+    width: 10%;
+}
+
+.heading li:nth-child(3),
+.list-data li:nth-child(3) {
+    width: 10%;
+}
+
+.heading li:last-child,
+.list-data li:last-child {
+    width: 55%;
+    text-align: left;
+}
+
+.heading li:last-child {
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    /* width: 80%; */
+    flex-direction: column;
+    margin: 10px 0;
+    /* backdrop-filter: blur(2px);
+    background-color: hsla(0, 0%, 100%, .1);
+    border-radius: 30px; */
+}
+
+.list-data {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    /* width: 100%; */
+    align-items: center;
+    backdrop-filter: blur(2px);
+    background-color: hsla(0, 0%, 100%, .1);
+    border-radius: 30px;
+    margin-bottom: 4px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    backdrop-filter: blur(2px);
+    background-color: hsla(0, 0%, 100%, .1);
+    border-radius: 20px;
+}
+
+.search {
+    width: 18%;
+}
+
+.search input {
+    margin: 0.5em;
+    /* padding: 1.5%; */
+    color: black;
+}
+
+.health-score {
+    width: 15%;
+}
+
+.health-score input{
+    margin-top: 0.5em
+}
+
+.diet-filter input {
+    margin: 0.4em 0.2em 0 1em;
+}
+
+.diet-filter {
+    width: 60%;
+}
+
+.diet-filter p {
+    display: inline-block;
+    margin: 0.4em 0.2em 0 1em;
+}
+
+.search-btn {
+    margin: 1% 0.5%;
+}
+/* 
+.search-btn:hover{
+    background-color: black;
+    color: white;
+} */
