@@ -3,11 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   /* border: 1px solid black; */
-  /* color: white; */
+  color: white;
 }
 
 body{
-  background-image: url(bg_white.jpg);
+  background-image: url(bg_yellow.svg);
   background-size: stretch;
 }
 
