@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react'
 import Cards from './Components/Cards.jsx'
 import List from './Components/List.jsx'
 import NavBar from './Components/NavBar.jsx'
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import { useCallback } from "react";
 import './App.css'
 const API_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
 
@@ -15,6 +18,71 @@ function App() {
   const [dishTypes, setDishTypes] = useState([]);
   const [dataLoaded, setDataLoaded] = useState(false);
 
+  const options = {
+    particles: {
+      number: {
+        value: 80,
+        density: {
+          enable: true,
+          area: 800
+        }
+      },
+      color: {
+        value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"]
+      },
+      shape: {
+        type: "square"
+      },
+      opacity: {
+        value: 1
+      },
+      size: {
+        value: { min: 1, max: 8 }
+      },
+      links: {
+        enable: true,
+        distance: 150,
+        color: "#808080",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 5,
+        direction: "none",
+        random: true,
+        straight: false,
+        outModes: "out"
+      }
+    },
+    interactivity: {
+      events: {
+        onHover: {
+          enable: true,
+          mode: "grab"
+        },
+        onClick: {
+          enable: true,
+          mode: "push"
+        }
+      },
+      modes: {
+        grab: {
+          distance: 140,
+          links: {
+            opacity: 1
+          }
+        },
+        push: {
+          quantity: 6
+        }
+      }
+    }
+  };
+
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
 
   // Function to call the API
   const getRecipes = async () => {
@@ -101,6 +169,7 @@ function App() {
 
   return (
     <div className='whole-page'>
+      <Particles options={options} init={particlesInit} />
       <div className='app-sider'>
         <header className="app-header">
           <h1> Recipe LookUp </h1>

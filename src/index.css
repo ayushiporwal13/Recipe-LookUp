@@ -16,12 +16,14 @@
 
 a {
   font-weight: 500;
-  color: black;
+  color: white;
   text-decoration: inherit;
 }
 a:hover {
-  color: #b7d605;
-}
+  color: #9bc02e;
+  backdrop-filter: blur(2px);
+  background-color: aliceblue;
+  border-radius: 30px;}
 
 body {
   margin: 0;

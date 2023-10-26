@@ -3,12 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   /* border: 1px solid black; */
-  /* color: white; */
+  color: white;
 }
 
 body{
-  background-image: url(bg_yellow.svg);
-  background-size: stretch;
+  background-image: url(black_bg.jpg);
+  background-size: cover;
 }
 
 #root {
@@ -25,7 +25,7 @@ body{
 }
 
 .app-sider{
-  width: 19%;
+  width: 15%;
   backdrop-filter: blur(2px);
   background-color: hsla(0,0%,100%,.1);
   border-radius: 30px;
@@ -33,7 +33,7 @@ body{
 }
 
 .app-main{
-  width: 80%;
+  width: 82%;
   display: flex;
   flex-direction: column;
 }
@@ -41,5 +41,10 @@ body{
   display: flex;  
 }
 
-
+.recipe-view{
+  max-width: 1280px;
+  backdrop-filter: blur(2px);
+  background-color: hsla(0, 0%, 100%, .1);
+  border-radius: 30px;
+}
 
