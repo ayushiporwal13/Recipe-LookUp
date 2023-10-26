@@ -1,41 +1,34 @@
-# Web Development Project 5 - *Recipe LookUp*
+# Web Development Project 6 - *Recipe LookUp*
 
 Submitted by: **Ayushi Porwal**
 
-This web app: **search for a wide variety of recipes. Users have the flexibility to set specific health score preferences and select dietary restrictions to refine their recipe choices.**
+This web app: **search for a wide variety of recipes. Users have the flexibility to set specific health score preferences and select dietary restrictions to refine their recipe choices. Also displays information graphically for healthscore, weight score & price per serving**
 
-Time spent: **18** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The list displays a list of data fetched using an API call**
-- [x] **Data uses the useEffect React hook and async/await syntax**
-- [x] **The app dashboard includes at least three summary statistics about the data such as**
-  - [x] **Average Price Per Serving for the displayed list of items**
-  - [x] **Average Health Score for the displayed list of items**
-  - [x] **Different types of dishes included in the displayed list of items**
-- [x] **A search bar allows the user to search for an item in the fetched data**
-- [x] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [x] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
+- [x] **Clicking on an item in the list view displays more details about it**
+- [x] **Clicking on an item has a direct, unique link to that item's detail view page**
+
 
 The following **optional** features are implemented:
 
-- [x] **Multiple filters can be applied simultaneously**
-- [x] **Filters use different input types such as a text input, a selection, or a slider**
-- [x] **The user can enter specific bounds for filter values**
+- [x] The site's customized dashboard contains more content that explains what is interesting about the data
+- [x] The site allows users to toggle between different data visualizations
 
 The following **additional** features are implemented:
 
-* [x] **In the displayed list, each recipe's title is a clickable link that allows you to explore more details about the recipes.**
-* [x] **Additionally, the list features images of the recipes, providing a visual representation of each dish.**
-* [x] **Moreover, the overall user experience and aesthetics of the website have been enhanced to create a more visually appealing and user-friendly interface.**
+* [x] Added a very cool background and learnt lot about recharts.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-[Video Walkthrough](https://i.imgur.com/lLw9DJx.gifv)
+[Video Walkthrough]()
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [CloudConvert](https://cloudconvert.com/mp4-to-gif) 
