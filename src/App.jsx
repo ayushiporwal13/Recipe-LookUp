@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Cards from './Components/Cards.jsx'
 import List from './Components/List.jsx'
 import NavBar from './Components/NavBar.jsx'
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import { useCallback } from "react";
 import './App.css'
 const API_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
 

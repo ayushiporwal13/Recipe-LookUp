@@ -5,8 +5,10 @@ const API_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
 export const RecipeView = () => {
     let params = useParams();
     const [recipeDetails, setRecipeDetails] = useState(null);
+    // const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        // setLoading(true);
         const getRecipeDetails = async () => {
             const analyzeRecipeQuery = `https://api.spoonacular.com/recipes/${params.id}/analyzedInstructions?apiKey=${API_KEY}`;
             const summarizeRecipeQuery = `https://api.spoonacular.com/recipes/${params.id}/summary?apiKey=${API_KEY}`;
@@ -25,14 +27,14 @@ export const RecipeView = () => {
     return (
         <div className='recipe-view'>
             <h1>Recipe Detail</h1>
-            <table style={{textAlign : 'left'}}>
+            <table style={{ textAlign: 'left' }}>
                 <thead style={{ fontWeight: 'bold' }}>
                     <td>Title</td>
                     <td>Summary</td>
                 </thead>
                 <tbody>
 
-                    <td  style={{ fontWeight: 'bold' }}>{recipeDetails?.summary.title}</td>
+                    <td style={{ fontWeight: 'bold' }}>{recipeDetails?.summary.title}</td>
                     <td dangerouslySetInnerHTML={{ __html: recipeDetails?.summary.summary }}></td>
                     <tr>
                         <td style={{ fontWeight: 'bold' }}>
@@ -41,7 +43,7 @@ export const RecipeView = () => {
                     </tr>
                     {recipeDetails?.analyze.map((step) =>
                         <tr key={step.number}>
-                            <td  style={{ fontWeight: 'bold' }}>Step {step.number}</td>
+                            <td style={{ fontWeight: 'bold' }}>Step {step.number}</td>
                             <td>{step.step}</td>
                         </tr>
                     )}
