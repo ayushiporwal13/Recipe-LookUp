@@ -167,30 +167,22 @@ function App() {
   }
 
   return (
-    <div className='whole-page'>
+    <div className='app-main'>
       <Particles options={options} init={particlesInit} />
-      <div className='app-sider'>
-        <header className="app-header">
-          <h1> Recipe LookUp </h1>
-        </header>
-        <NavBar />
+      <div className='app-row'>
+        <Cards summary={avgpricePerServing} title={"Average Price Per Serving"}></Cards>
+        <Cards summary={avghealthScore} title={"Average Health Score"}></Cards>
+        <Cards summary={dishTypes} title={"Different Dish Types"}></Cards>
       </div>
-      <div className='app-main'>
-        <div className='app-row'>
-          <Cards summary={avgpricePerServing} title={"Average Price Per Serving"}></Cards>
-          <Cards summary={avghealthScore} title={"Average Health Score"}></Cards>
-          <Cards summary={dishTypes} title={"Different Dish Types"}></Cards>
-        </div>
-        <div className='app-row'>
-          <List
-            recipes={recipes}
-            healthScore={healthScore}
-            dish={dish}
-            diet={diet}
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-          />
-        </div>
+      <div className='app-row'>
+        <List
+          recipes={recipes}
+          healthScore={healthScore}
+          dish={dish}
+          diet={diet}
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+        />
       </div>
     </div>
   )

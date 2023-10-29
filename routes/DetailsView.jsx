@@ -71,7 +71,7 @@ const DetailView = () => {
     }, []);
 
     return (
-        <div>
+        <div className='app-main'>
             <Particles options={options} init={particlesInit} />
             <RecipeView />
         </div>
