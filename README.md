@@ -4,7 +4,7 @@ Submitted by: **Ayushi Porwal**
 
 This web app: **search for a wide variety of recipes. Users have the flexibility to set specific health score preferences and select dietary restrictions to refine their recipe choices. Also displays information graphically for healthscore, weight score & price per serving**
 
-Time spent: **6** hours spent in total
+Time spent: **7** hours spent in total
 
 ## Required Features
 
@@ -22,13 +22,13 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [x] Added a very cool background and learnt lot about recharts.
+* [x] Added a very cool background and learned lot about recharts.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-[Video Walkthrough](https://i.imgur.com/1FEE1OZ.gifv)
+[Video Walkthrough](https://i.imgur.com/KxsAXhP.gifv)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [CloudConvert](https://cloudconvert.com/mp4-to-gif) 
