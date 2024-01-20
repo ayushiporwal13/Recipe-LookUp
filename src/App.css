@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   /* border: 1px solid black; */
-  /* color: white; */
+  color: white;
 }
 
 
@@ -12,6 +12,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-image: url(yellow_bg.jpg);
 }
 
 .whole-page{
